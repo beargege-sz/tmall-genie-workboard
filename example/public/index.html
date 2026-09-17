@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="theme-color" content="#101923">
+<title>个人工作台</title><link rel="stylesheet" href="/styles.css?v=web-sync-1">
+</head><body><main>
+<header><h1>个人工作台</h1><time id="clock"></time></header>
+<p id="connection-error" role="status" hidden></p>
+<section class="overview">
+<div class="photo-stage" aria-label="周记照片"><img id="journal-photo" alt="周记照片" hidden><span id="photo-placeholder">读取照片…</span></div>
+<section class="quota" aria-label="主 Codex 余量">
+<h2>主 Codex · 本周余量</h2><strong id="remaining">--</strong>
+<div class="quota-details"><p id="reset-time">等待重置时间</p><p id="reset-countdown"></p><p class="muted" id="usage-note">等待同步</p><p class="muted">主账号 · 每5分钟同步</p></div>
+</section></section>
+<p id="photo-caption"></p><section class="todos" id="todos" aria-label="下周待办"></section>
+</main><script type="module" src="/app.js?v=web-sync-1"></script></body></html>

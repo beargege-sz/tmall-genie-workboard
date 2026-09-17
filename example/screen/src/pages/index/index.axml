@@ -1,0 +1,30 @@
+<div class="board">
+  <div class="brand">个人工作台 · B15</div>
+  <div class="clock">{{clockText}}</div>
+  <div class="photo-stage">
+    <image class="photo" style="width:{{photoWidth}}px;height:{{photoHeight}}px;left:{{photoLeft}}px;top:{{photoTop}}px;" src="{{photoUrl}}" />
+  </div>
+  <div class="photo-caption">{{photoStatus}}</div>
+    <div class="usage">
+      <div class="usage-label">CODEX · 本周余量</div>
+      <div class="remaining">{{remaining}}</div>
+      <div class="reset-time">{{resetTime}}</div>
+      <div class="reset-countdown">{{resetCountdown}}</div>
+      <div class="usage-note">{{usageNote}}</div>
+      <div class="usage-detail">主账号 · 每 5 分钟同步</div>
+    </div>
+    <div class="strategy">
+      <div class="todo left row1">{{todo1}}</div>
+      <div class="todo left row2">{{todo2}}</div>
+      <div class="todo left row3">{{todo3}}</div>
+      <div class="todo left row4">{{todo4}}</div>
+      <div class="todo middle row1">{{todo5}}</div>
+      <div class="todo middle row2">{{todo6}}</div>
+      <div class="todo middle row3">{{todo7}}</div>
+      <div class="todo middle row4">{{todo8}}</div>
+      <div class="todo right row1">{{todo9}}</div>
+      <div class="todo right row2">{{todo10}}</div>
+      <div class="todo right row3">{{todo11}}</div>
+      <div class="todo right row4">{{todo12}}</div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+{
+  "name": "personal-workboard-example",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A voice-first personal workboard for Tmall Genie.",
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "image-size": "2.0.4",
+    "sharp": "0.35.4"
+  }
+}

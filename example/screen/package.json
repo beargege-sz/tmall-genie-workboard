@@ -1,0 +1,8 @@
+{
+  "name": "personal-workboard-screen",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "build": "waft build", "start": "waft start" },
+  "dependencies": { "waft": "0.7.51", "waft-json": "1.1.10" },
+  "devDependencies": { "waft-cli": "0.7.32", "waft-web": "1.2.24" }
+}

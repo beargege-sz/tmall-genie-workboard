@@ -1,0 +1,8 @@
+.env
+runtime/
+node_modules/
+screen/node_modules/
+screen/build/
+screen/dist/
+screen/.waft/
+.DS_Store

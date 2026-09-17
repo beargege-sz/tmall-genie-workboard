@@ -1,0 +1,26 @@
+:root { color-scheme:dark; font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:#101923; color:#f1efe9; font-synthesis:none }
+* { box-sizing:border-box } body { margin:0 } main { max-width:1440px; margin:auto; padding:12px 20px 20px }
+header { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:32px; margin-bottom:8px }
+h1,h2,p { margin:0 } h1 { font-size:20px; font-weight:600 } time { font-size:20px; font-variant-numeric:tabular-nums; text-align:right }
+.overview { display:grid; grid-template-columns:minmax(0,640fr) minmax(0,324fr); gap:20px }
+.photo-stage { aspect-ratio:16/9; position:relative; background:#080e14; overflow:hidden; border-radius:12px; display:grid; place-items:center }
+.photo-stage img { position:absolute; width:100%; height:100%; object-fit:contain }
+#photo-placeholder { color:#aab9c8; font-size:16px; padding:20px }
+.quota { background:#1c2b3b; border-radius:12px; padding:clamp(20px,2.7vw,36px); display:flex; flex-direction:column; justify-content:space-between; gap:12px; min-width:0 }
+h2 { font-size:clamp(16px,1.8vw,24px); font-weight:500 }
+#remaining { font-size:clamp(56px,7.4vw,104px); line-height:1.1; color:#bceffc; font-weight:600; font-variant-numeric:tabular-nums }
+.quota-details { font-size:clamp(14px,1.65vw,20px); line-height:1.5 }
+.quota-details p+p { margin-top:6px }.muted { color:#aab9c8; font-size:.875em }
+#photo-caption { min-height:32px; padding:7px 0; font-size:16px; line-height:1.5; color:#bac8d6 }
+.todos { display:grid; grid-template-rows:repeat(4,minmax(30px,auto)); grid-auto-flow:column; grid-template-columns:repeat(3,minmax(0,1fr)); column-gap:24px; padding-top:20px }
+.todo { font-size:clamp(16px,1.6vw,21px); line-height:1.5; padding:3px 0; overflow-wrap:anywhere }
+#connection-error { background:#423224; color:#ffdfb1; padding:12px; margin-bottom:12px; border-radius:8px }
+[hidden] { display:none!important }
+@media(max-width:700px) {
+main { padding:16px } header { align-items:baseline; flex-wrap:wrap } time { font-size:16px }
+.overview { grid-template-columns:1fr; gap:14px }
+.quota { padding:20px; display:grid; grid-template-columns:auto 1fr; gap:14px 24px; align-items:center }
+.quota h2 { grid-column:1/-1 }.quota-details { font-size:14px }
+.todos { grid-template-columns:1fr; grid-template-rows:none; grid-auto-flow:row; padding-top:10px }
+.todo { padding:8px 0 }.todo:empty { display:none }
+}

@@ -1,0 +1,8 @@
+{
+  "outAssembly": false,
+  "output": "../build",
+  "baseDir": "./src",
+  "mode": "release",
+  "optimizeLevel": 2,
+  "shrinkLevel": 1
+}
